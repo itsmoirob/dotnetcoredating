@@ -54,7 +54,7 @@ export class AuthService {
   /**
    * Registers a user
    */
-  register(model: any): Observable<any> {
+  register(model: User): Observable<any> {
     return this.http.post(`${this.baseUrl}/register`, model);
   }
 
